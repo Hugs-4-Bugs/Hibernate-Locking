@@ -6,6 +6,7 @@ Locking can be classified into two main types:
 * Optimistic Locking
 * Pessimistic Locking
 
+
 ## 1. Optimistic Locking
 
 ### When to Use:
