@@ -176,7 +176,7 @@ The record is locked, preventing other transactions from modifying it until the 
 
 
 
-## Session Vs Session Factory 
+# Session Vs Session Factory 
 
 
 Think of **SessionFactory** and **Session** in Hibernate like a **restaurant** and a **dining table**:
