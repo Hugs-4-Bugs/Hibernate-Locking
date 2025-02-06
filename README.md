@@ -180,7 +180,6 @@ The record is locked, preventing other transactions from modifying it until the 
 
 
 Think of **SessionFactory** and **Session** in Hibernate like a **restaurant** and a **dining table**:
-
 ### 🍽 **SessionFactory → The Restaurant**  
 - A restaurant **creates dining tables** when customers arrive.  
 - It is a **one-time setup** (like setting up the kitchen, hiring chefs, etc.).  
@@ -205,7 +204,30 @@ Think of **SessionFactory** and **Session** in Hibernate like a **restaurant** a
 
 
 
+# OR
 
+Imagine a **tea shop** ☕:  
+
+### **SessionFactory → The Tea Maker (Chaiwala)**
+- The tea maker **prepares everything** (boils water, keeps tea leaves, milk, sugar ready).  
+- He **stays in the shop all day** and makes tea **whenever customers come**.  
+- Without him, you **can’t get tea**!  
+
+### **Session → A Cup of Tea**  
+- When you order tea, the tea maker **pours one cup** and serves you.  
+- You **drink it and leave** (temporary usage).  
+- The cup is **not reused**; a new one is made for the next customer.  
+
+### 🔄 **How It Works?**  
+1️⃣ **The tea maker (SessionFactory) is always ready** to prepare tea.  
+2️⃣ **A customer (your app) orders tea, and a cup (Session) is given**.  
+3️⃣ **Once finished, the cup is thrown away** (Session is closed).  
+
+### **Super Simple Summary**  
+- **SessionFactory = Tea Maker (creates tea on demand)**  
+- **Session = A Cup of Tea (used once, then gone)**  
+
+---
 
 
 ## Click here to get in touch with me: 
