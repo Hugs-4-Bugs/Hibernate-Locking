@@ -175,6 +175,39 @@ The record is locked, preventing other transactions from modifying it until the 
 ---
 
 
+
+## Session Vs Session Factory 
+
+
+Think of **SessionFactory** and **Session** in Hibernate like a **restaurant** and a **dining table**:
+
+### 🍽 **SessionFactory → The Restaurant**  
+- A restaurant **creates dining tables** when customers arrive.  
+- It is a **one-time setup** (like setting up the kitchen, hiring chefs, etc.).  
+- It is **heavy** to set up but serves multiple customers.  
+- In Hibernate, **SessionFactory** is responsible for **creating Sessions**.  
+- It is created **only once** and used to open multiple Sessions.  
+
+### 🍽 **Session → The Dining Table**  
+- A dining table is where customers **sit, order, eat, and leave**.  
+- It is **temporary**—once a customer finishes, the table is cleaned and given to someone else.  
+- In Hibernate, **Session** is used to interact with the database (insert, update, delete, fetch).  
+- It is **lightweight** and used for a short time.  
+
+### 🔄 **How They Work Together**  
+1️⃣ The **restaurant (SessionFactory)** creates a new **dining table (Session)** when a customer comes.  
+2️⃣ The **customer (your Java application)** sits at the table, eats (performs database operations), and leaves.  
+3️⃣ The **table (Session) is cleared** and made ready for another customer.  
+
+### ⚡ **Key Differences in One Line**  
+- **SessionFactory** = Creates **Sessions** (heavy, one-time setup, used globally).  
+- **Session** = Interacts with the **database** (lightweight, temporary, used per operation).  
+
+
+
+
+
+
 ## Click here to get in touch with me: 
 <a href="https://github.com/Tech-Hubs" target="_blank"><b>PrabhatDevLab</b></a>, 
 <a href="https://hugs-4-bugs.github.io/myResume/" target="_blank"><b>PrabhatKumar.com</b></a>, 
