@@ -203,7 +203,6 @@ Think of **SessionFactory** and **Session** in Hibernate like a **restaurant** a
 - **Session** = Interacts with the **database** (lightweight, temporary, used per operation).  
 
 
-
 # OR
 
 Imagine a **tea shop** ☕:  
